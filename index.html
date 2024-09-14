@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <!-- links -->
+     <link rel="stylesheet" href="./styling.css">
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="main">
+        <div id="display">
+            <input type="text" id="currentinput">
+        </div>
+        <div id="calculator">
+            <div id="rows">
+                <button class="digits" onclick="clearAll()">clr</button>
+                <button class="digits" onclick="deleteDigit()">del</button>
+                <button class="digits" onclick="setOperator('/')">/</button>
+            </div>
+            <div id="rows">
+                <button class="digits" onclick="appendDigit('7')">7</button>
+                <button class="digits" onclick="appendDigit('8')">8</button>
+                <button class="digits" onclick="appendDigit('9')">9</button>
+                <button class="digits" onclick="setOperator('*')">x</button>
+            </div>
+            <div id="rows">
+                <button class="digits" onclick="appendDigit('4')">4</button>
+                <button class="digits" onclick="appendDigit('5')">5</button>
+                <button class="digits" onclick="appendDigit('6')">6</button>
+                <button class="digits" onclick="setOperator('-')">-</button>
+            </div>
+            <div id="rows">
+                <button class="digits" onclick="appendDigit('1')">1</button>
+                <button class="digits" onclick="appendDigit('2')">2</button>
+                <button class="digits" onclick="appendDigit('3')">3</button>
+                <button class="digits" onclick="setOperator('+')">+</button>
+            </div>
+            <div id="rows">
+                <button class="digits" onclick="appendDigit('0')">0</button>
+                <button class="digits eq" onclick="calculateResult()" class="equalsto">=</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- scriptt -->
+
+    <script src="./main.js"></script>
+</body>
+</html>

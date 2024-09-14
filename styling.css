@@ -1,0 +1,60 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: "Press Start 2P", system-ui;
+    font-size: 10px;
+}
+
+.main{
+    display: flex;
+    flex-direction: column;
+    /* border: 1px solid black; */
+    width: 25%;
+    height: 70vh;
+    margin: 15vh auto;
+}
+
+#display{
+    width: 100%;
+    height: 30%;
+}
+
+#currentinput{
+    width: 100%;
+    height: 100%;
+    background: rgba(64, 248, 255, 0.25);
+    border: 1px solid #279EFF;
+    border-bottom: none;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    font-size: 15px;
+    padding: 5%;
+}
+
+#calculator{
+    height: 70%;
+}
+
+#rows{
+    display: flex;
+    width: 100%;
+    /* border: 1px  solid red; */
+    /* height: auto; */
+    height: 20%;
+    background: rgba(64, 248, 255, 0.25);
+}
+
+.digits{
+    width: 33.5%;
+    background-color: rgba(39, 158, 255, 0.25);
+    border-radius: 5px;
+    border: 1px solid #279EFF;
+}
+
+.eq{
+    width: 67%;
+    background-color: rgba(39, 158, 255, 0.25);
+    border-radius: 5px;
+    border: 1px solid #279EFF;
+}
